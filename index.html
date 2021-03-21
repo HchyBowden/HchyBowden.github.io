@@ -18,18 +18,19 @@ article { background-color:Linen;}
 
 <body>
   <article>
+    <header>
   <h1>My Profile Assignment</h1>
     <h2> My Profile</h2>
-
+</header>
     <p>
-        <img src="profilepicsmall.jpg" alt="image of Heather Bowden" style="float:left;">
+        <img src="profilepicsmall.jpg" alt="image of Heather Bowden" width=40%; margin-right=1%; style="float:left;">
         <b>Name:</b> Heather Ann Bowden.<br>
         <b>Student Number:</b> S3763539<br>
         <b>Student Email:</b> s3763539@student.rmit.edu.au<br>
         <b>Nationality:</b>Australian. <b>Culture:</b> Blended - I am 7th generation Australian<br>
         <b>Education:</b> Associate Dipploma of Electronic Engineering.<br>
         <b>Residence:</b> Singapore - East Coast!<br>
-    </p>
+    </p style = "clear:both";>
     <p>
         <b>Something about me:</b> I have an elderly ragdoll cat called Crystal. She has travelled everywhere with me as I believe a pet is for life. From Australia she went to New Zealand, then Malaysia, Singapore, back to Australia and now back in Singapore! Last year during the Singapore lockdown she developed a tumour. All very stressful – the vet had to ask the government for permission to treat her (the rules were life threatening situations only) and there were delays in pathology as samples had to be sent to Hong Kong for analysis. But she has now fully recovered!
         <figure>
@@ -102,7 +103,7 @@ article { background-color:Linen;}
         • <span style="color:Red;"> RED:</span> Expediting <br>
         • <span style="color:Lime;"> GREEN:</span> Communicating <br>
         • <span style="color:MediumBLUE;">BLUE:</span> Planning <br>
-        • <span style="color:Yellow;">YELLOW:</span> Administrating <br>
+        • <span style="color:Gold;">YELLOW:</span> Administrating <br>
 
         <b>Your Interest</b><br>
         "Interests" describe the types of activities that you are drawn to; these will need to be present in a job or career that you are considering if you are to stay motivated. It is important to note that interest in an activity does not necessarily indicate skill.
@@ -120,7 +121,7 @@ article { background-color:Linen;}
     <h3> Test Summary</h3>
     <p>
         The results showed a theme, I like to plan and organise after taking in the ideas and views of others. That I have an attention to detail. The word “reflective” appears a few times in the quiz results.
-        There was some interesting detail in the sixteen personalities where it says I like rules and structure.
+        There was some interesting detail in the sixteen personalities where it says I like rules and structure.<br>
         The learning survey shows why I have difficulty in recalling detail from telephone calls where I have not written down notes. I think the writing may be the “doing” and then I “visually” learn it when I read the information.
         The career survey shows that you cannot take these things too seriously, I cannot see me taking up being a baseball player! But it did have a few IT careers in there, and that I should look at something that creates “something”.
         I think the results may show what duties in a team I would be the most motivated in. Creating the structure, the rules on how the project should progress, or maybe verifying the results – the quality control.
@@ -137,20 +138,20 @@ article { background-color:Linen;}
     </p>
     <h3> Description</h3>
     <p>
-    Client side:
+    Client side:<br>
 The Android application will open with the location choice of Home, Work or Roam. Each button has a simple logo representing the choice as well as the wording. A drop down, side menu represented by a hamburger icon will give options for location setting, help and “Contact US”.
 By pressing the Home, Work or Roam location button, the GPS details are sent to the server for matching against the data base. On a successful match the screen is updated with a list of business types available. The business types are also represented by a logo and wording. Examples would be fresh food, restaurants, fitness.  By pressing on a business type button, a list of matching businesses will be displayed.
-Pressing on the business button will provide a choice of available contact options. For example, a butcher may only want a phone contact while a clothing store would want a video connection to show what is available. A map button is also provided.
-Server side:
-A database server where each business has the following fields. GPS location, business type, business id, business name, business address, contact choice one, contact choice two.
+Pressing on the business button will provide a choice of available contact options. For example, a butcher may only want a phone contact while a clothing store would want a video connection to show what is available. A map button is also provided.<br>
+Server side:<br>
+A database server where each business has the following fields. GPS location, business type, business id, business name, business address, contact choice one, contact choice two.<br>
 An initial request to the application server consists of the GPS co-ordinates of the location choice of the client with the business type being of value zero. With the business type being zero the server makes a database query of only the business types in a GPS co-ordinate range close to the given GPS co-ordinates. The server then rejects the duplicate matches and sends a list of business type buttons matching the request.
-When the user presses a business type button the location choice GPS co-ordinates are again sent but this time with the business type value. The server then makes another search with the addition of the business type value. All matching businesses are returned displaying the business name and address.
+When the user presses a business type button the location choice GPS co-ordinates are again sent but this time with the business type value. The server then makes another search with the addition of the business type value. All matching businesses are returned displaying the business name and address.<br>
 
 The client now chooses a business button – the business id is sent, and the server returns the store’s GPS co-ordinates and contact choices. If the client presses the map button the co-ordinates are sent to Google maps and a map page opens. If the client presses a phone number the number is dialled or if they press WhatsApp contact the store is contacted via WhatsApp if the client has the WhatsApp installed.
-On every app page there is a Home button to take you back to the initial page.
-The hamburger drop-down menu has a help page with instructions on how to use the application.
-A set location menu where you can choose Home or Work and press store, to save the GPS co-ordinates of where you currently are.
-And finally, a “Contact us” where the client can provide feedback on the application or report issues with the validity of the shop data and a usage agreement.
+On every app page there is a Home button to take you back to the initial page.<br>
+The hamburger drop-down menu has a help page with instructions on how to use the application.<br>
+A set location menu where you can choose Home or Work and press store, to save the GPS co-ordinates of where you currently are.<br>
+And finally, a “Contact us” where the client can provide feedback on the application or report issues with the validity of the shop data and a usage agreement.<br>
 The style of the application will be plain using text that is easy to read, and colours that help define choices but are friendly to people with vision issues.
     </p>
     <h3>Tools and Technologies</h3>
@@ -159,9 +160,9 @@ The style of the application will be plain using text that is easy to read, and 
     </p>
     <h3>Skills Required</h3>
     <p>
-        To make the application, the following skills are required: Knowledge on how to create an Android application, how to create a database. This will require knowledge on a programming language. How to create prototypes and what colours, styles work well on mobile phones. How does one engage cloud services? What needs to be known in resources? There are free cloud services, but the downside is reliability, security, and sizing.
-To make the tutorials, video editing skills are required, but there are many free editors.
-To engage with businesses, to have the contacts that will reach into the community such as the local council or business association.
+        To make the application, the following skills are required: Knowledge on how to create an Android application, how to create a database. This will require knowledge on a programming language. How to create prototypes and what colours, styles work well on mobile phones. How does one engage cloud services? What needs to be known in resources? There are free cloud services, but the downside is reliability, security, and sizing.<br>
+To make the tutorials, video editing skills are required, but there are many free editors.<br>
+To engage with businesses, to have the contacts that will reach into the community such as the local council or business association.<br>
     </p>
     <h3>Outcome</h3>
     <p>
