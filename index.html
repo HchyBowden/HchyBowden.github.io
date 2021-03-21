@@ -27,7 +27,7 @@
     <p>
         <b>Something about me:</b> I have an elderly ragdoll cat called Crystal. She has travelled everywhere with me as I believe a pet is for life. From Australia she went to New Zealand, then Malaysia, Singapore, back to Australia and now back in Singapore! Last year during the Singapore lockdown she developed a tumour. All very stressful – the vet had to ask the government for permission to treat her (the rules were life threatening situations only) and there were delays in pathology as samples had to be sent to Hong Kong for analysis. But she is all good now!
         <figure>
-            <img src="CrystalGrumpsmall.jpg.png" alt="image of Crystal on her desk pillow">
+            <img src="CrystalGrumpy500.png" alt="image of Crystal on her desk pillow">
             <figcaption> You know I don't like having my picture taken!</figcaption>
         </figure>
 
@@ -133,13 +133,13 @@
     <p>
     Client side:
 The Android application will open with the location choice of Home, Work or Roam. Each button has a simple logo representing the choice as well as the wording. A drop down, side menu represented by a hamburger icon will give options for location setting, help and “Contact US”.
-By pressing the Home, Work or Roam location button, the GPS details are sent to the server for matching against the data base. On a successful match the screen is updated with a list of business types available. The business types are also represented by a logo and wording. Examples would be fresh food, restaurants, fitness.  By pressing on a business type button, a list of matching businesses will be displayed. 
+By pressing the Home, Work or Roam location button, the GPS details are sent to the server for matching against the data base. On a successful match the screen is updated with a list of business types available. The business types are also represented by a logo and wording. Examples would be fresh food, restaurants, fitness.  By pressing on a business type button, a list of matching businesses will be displayed.
 Pressing on the business button will provide a choice of available contact options. For example, a butcher may only want a phone contact while a clothing store would want a video connection to show what is available. A map button is also provided.
 Server side:
 A database server where each business has the following fields. GPS location, business type, business id, business name, business address, contact choice one, contact choice two.
 An initial request to the application server consists of the GPS co-ordinates of the location choice of the client with the business type being of value zero. With the business type being zero the server makes a database query of only the business types in a GPS co-ordinate range close to the given GPS co-ordinates. The server then rejects the duplicate matches and sends a list of business type buttons matching the request.
 When the user presses a business type button the location choice GPS co-ordinates are again sent but this time with the business type value. The server then makes another search with the addition of the business type value. All matching businesses are returned displaying the business name and address.
-    
+
 The client now chooses a business button – the business id is sent, and the server returns the store’s GPS co-ordinates and contact choices. If the client presses the map button the co-ordinates are sent to Google maps and a map page opens. If the client presses a phone number the number is dialled or if they press WhatsApp contact the store is contacted via WhatsApp if the client has the WhatsApp installed.
 On every app page there is a Home button to take you back to the initial page.
 The hamburger drop-down menu has a help page with instructions on how to use the application.
